@@ -86,9 +86,9 @@ fn pretvori (vnos: &str) -> u16 {
 }
 
 fn main() {
-    loop {
-        let mut vnos: String = String::new();
-        io::stdin().read_line(&mut vnos).expect("Ne znam brati!");
-        println!("{}", pretvori(&vnos));
-    }
+    // loop {
+    let mut vnos: String = String::new();
+    io::stdin().read_line(&mut vnos).expect("Ne znam brati!");
+    println!("{}", pretvori(&vnos));
+    // }
 }

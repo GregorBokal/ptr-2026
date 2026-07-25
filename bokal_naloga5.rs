@@ -27,8 +27,10 @@ fn main() {
         if let (Some(p), Some(z)) = (vnos.find('#'), vnos.rfind('#')) {
             let (p, z) = (p as u32, z as u32);
 
-            if v < min_y {min_y = v} else if v > max_y {max_y = v}
-            if p < min_x {min_x = p} else if z > max_x {max_x = z}
+            if v < min_y {min_y = v}
+            if v > max_y {max_y = v}
+            if p < min_x {min_x = p}
+            if z > max_x {max_x = z}
         }
     }
     println!("{}", 2 * (1 + max_y - min_y) + 2 * (1 + max_x - min_x))
